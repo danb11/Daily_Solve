@@ -10,39 +10,55 @@ import Foundation
 
 //print("Hello, World!")
 
-class CXPen {
-    var brand : String
-    var color : String
-    var usage : Int
-    
-    init(withBrand : String) {
-        brand = withBrand
-        color = "Color"
-        usage = 100
-    }
-    
-    func getbrand() -> String {
-        return brand
-    }
-    func getcolor() -> String {
-        return color
-    }
-    func getusage() -> Int {
-        return usage
-    }
-    
-    func setBrand(_ setting : String) {
-        brand = setting
-    }
-    func setColor(_ setting : String) {
-        color = setting
-    }
-    func setUsage(_ setting : Int) {
-        usage = setting
-    }
-    
-    func printDescription() {
-        print()
-    }
-    
-}
+var pen0 = CXPen(withBrand: "")
+
+
+var pen1 = RedPen()
+var pen2 = RedPen()
+var pen3 = BluePen()
+var pen4 = BluePen()
+var pen5 = BluePen()
+var pen6 = BlackPen()
+var pen7 = BlackPen()
+
+
+
+var all = PenHolder(withCapacity : 5)
+
+all.add(pen: pen1)
+all.add(pen: pen3)
+
+//pen5.printDescription()
+
+var monami = CXMonamiPen(withModel : "Limited Edition")
+
+monami.printDescription()
+
+
+
+
+var all1 = allFiles(atPath: "/Users/danb/dan")
+
+print(all1)
+
+
+/*
+var pen1 = RedPen()
+var pen2 = RedPen.init()
+var pen3 = BluePen.init()
+var pen4 = BluePen.init()
+var pen5 = BluePen.init()
+var pen6 = BluePen.init()
+var pen7 = BlackPen.init()
+var pen8 = BlackPen.init()
+var pen9 = BlackPen.init()
+var pen10 = BlackPen.init()
+
+ 
+ 
+
+//pen1.printDescription()
+
+
+
+ */

@@ -7,3 +7,28 @@
 //
 
 import Foundation
+//
+//let fileA = FileManager()
+//var result : [String] = []
+
+
+
+//result = try fileA.contentsOfDirectory(atPath: "")
+
+func allFiles(atPath : String)->[String] {
+    let file = FileManager()
+    var result : [String] = []
+    do {
+        result = try file.contentsOfDirectory(atPath: atPath)
+    }
+    catch let error as NSError {
+        print (error)
+    }
+    return result
+}
+
+
+func isExist(filename : String, atPath: String) -> Bool {
+    return true
+}
+
