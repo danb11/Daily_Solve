@@ -1,4 +1,4 @@
-#### Code Squad _ Blue
+## Code Squad _ Blue
 
 > Daily Training 
 
