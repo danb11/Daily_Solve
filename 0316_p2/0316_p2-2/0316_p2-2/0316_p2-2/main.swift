@@ -13,11 +13,4 @@ print("Hello, World!")
 
 var machine = VendingMachine()
 
-var cococo = Coke()
-
-
-
 var drink = Drink()
-drink.add(additem: cococo)
-
-print(drink)

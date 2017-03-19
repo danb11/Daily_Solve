@@ -11,7 +11,7 @@
 		B7E0FECE1E7A7D1B00EBC2B7 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0FECD1E7A7D1B00EBC2B7 /* Drink.swift */; };
 		B7E0FED01E7A894000EBC2B7 /* Cocacola.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0FECF1E7A894000EBC2B7 /* Cocacola.swift */; };
 		B7E0FED21E7A898500EBC2B7 /* JiroHite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0FED11E7A898500EBC2B7 /* JiroHite.swift */; };
-		B7E0FED41E7A9ED700EBC2B7 /* VendingMachine'.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0FED31E7A9ED700EBC2B7 /* VendingMachine'.swift */; };
+		B7E0FED41E7A9ED700EBC2B7 /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0FED31E7A9ED700EBC2B7 /* VendingMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,7 @@
 		B7E0FECD1E7A7D1B00EBC2B7 /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		B7E0FECF1E7A894000EBC2B7 /* Cocacola.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cocacola.swift; sourceTree = "<group>"; };
 		B7E0FED11E7A898500EBC2B7 /* JiroHite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroHite.swift; sourceTree = "<group>"; };
-		B7E0FED31E7A9ED700EBC2B7 /* VendingMachine'.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VendingMachine'.swift"; sourceTree = "<group>"; };
+		B7E0FED31E7A9ED700EBC2B7 /* VendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 				B7E0FECD1E7A7D1B00EBC2B7 /* Drink.swift */,
 				B7E0FECF1E7A894000EBC2B7 /* Cocacola.swift */,
 				B7E0FED11E7A898500EBC2B7 /* JiroHite.swift */,
-				B7E0FED31E7A9ED700EBC2B7 /* VendingMachine'.swift */,
+				B7E0FED31E7A9ED700EBC2B7 /* VendingMachine.swift */,
 			);
 			path = "0316_p2-2";
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			files = (
 				B7E0FECE1E7A7D1B00EBC2B7 /* Drink.swift in Sources */,
 				B7E0FEC71E7A7D0D00EBC2B7 /* main.swift in Sources */,
-				B7E0FED41E7A9ED700EBC2B7 /* VendingMachine'.swift in Sources */,
+				B7E0FED41E7A9ED700EBC2B7 /* VendingMachine.swift in Sources */,
 				B7E0FED01E7A894000EBC2B7 /* Cocacola.swift in Sources */,
 				B7E0FED21E7A898500EBC2B7 /* JiroHite.swift in Sources */,
 			);

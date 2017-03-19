@@ -71,6 +71,4 @@ func checkcapacity(additem : Drink) {
 
 }
 
-
-
 */
