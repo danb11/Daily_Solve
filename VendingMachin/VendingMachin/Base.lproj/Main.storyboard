@@ -421,13 +421,30 @@
                                                 <action selector="backBt:" destination="pbY-n2-hNP" id="OBc-ti-fO9"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="🔒" id="02K-z3-ri2"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-8C-qla">
+                                <rect key="frame" x="168" y="503" width="36" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY1-jJ-bOc">
+                                <rect key="frame" x="26" y="496" width="121" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="All Stock Check!"/>
+                                <connections>
+                                    <action selector="stockcheck:" destination="pbY-n2-hNP" eventType="touchUpInside" id="o1S-gE-g78"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="allstock" destination="f2n-8C-qla" id="4dX-gk-utv"/>
                         <outlet property="coffeeNb" destination="16o-x0-4FO" id="Ubo-NC-8au"/>
                         <outlet property="cokeNb" destination="S6O-GX-ajN" id="qCQ-7W-dUv"/>
                         <outlet property="juiceNb" destination="fCz-AP-kFF" id="AZo-Kh-fVi"/>
@@ -438,7 +455,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywd-zk-eU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="90"/>
+            <point key="canvasLocation" x="989.60000000000002" y="89.505247376311857"/>
         </scene>
     </scenes>
     <resources>

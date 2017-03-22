@@ -10,6 +10,7 @@
 		B7735BF11E7E97830064E6FE /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7735BF01E7E97830064E6FE /* Drink.swift */; };
 		B7735BF31E7EA3EE0064E6FE /* storageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7735BF21E7EA3EE0064E6FE /* storageViewController.swift */; };
 		B7735BF51E7EA6AD0064E6FE /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7735BF41E7EA6AD0064E6FE /* data.swift */; };
+		B7735BFD1E7F7E550064E6FE /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7735BFC1E7F7E550064E6FE /* VendingMachine.swift */; };
 		B788A0F81E7E674400BD9A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788A0F71E7E674400BD9A24 /* AppDelegate.swift */; };
 		B788A0FA1E7E674400BD9A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788A0F91E7E674400BD9A24 /* ViewController.swift */; };
 		B788A0FD1E7E674400BD9A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B788A0FB1E7E674400BD9A24 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		B7735BF01E7E97830064E6FE /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		B7735BF21E7EA3EE0064E6FE /* storageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storageViewController.swift; sourceTree = "<group>"; };
 		B7735BF41E7EA6AD0064E6FE /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		B7735BFC1E7F7E550064E6FE /* VendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
 		B788A0F41E7E674400BD9A24 /* VendingMachin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B788A0F71E7E674400BD9A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B788A0F91E7E674400BD9A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				B788A0FB1E7E674400BD9A24 /* Main.storyboard */,
 				B7735BF21E7EA3EE0064E6FE /* storageViewController.swift */,
 				B7735BF01E7E97830064E6FE /* Drink.swift */,
+				B7735BFC1E7F7E550064E6FE /* VendingMachine.swift */,
 				B788A0FE1E7E674400BD9A24 /* Assets.xcassets */,
 				B788A1001E7E674400BD9A24 /* LaunchScreen.storyboard */,
 				B788A1031E7E674400BD9A24 /* Info.plist */,
@@ -178,6 +181,7 @@
 				B7735BF31E7EA3EE0064E6FE /* storageViewController.swift in Sources */,
 				B7735BF51E7EA6AD0064E6FE /* data.swift in Sources */,
 				B788A0F81E7E674400BD9A24 /* AppDelegate.swift in Sources */,
+				B7735BFD1E7F7E550064E6FE /* VendingMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

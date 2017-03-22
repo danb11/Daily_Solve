@@ -16,15 +16,30 @@ class VendingMachine {
     
     
     // 특정 음료를 추가
-    func addDrink(drink : Drink, count : Int) {
+    func addDrink(drink : Drink) {
+        if let number = allstock[drink.getName()] {
+            if number.count > 0 {
+                allstock[drink.getName()]?.append(drink)
+            }
+        }
+        else {
+            var temp = [Drink]()
+            temp.append(drink)
+            allstock[drink.getName()] = temp
+        }
+    }
+        
+        /*
         let drinkName = drink.getName()
         var drinkArray = [Drink]()
-        for _ in 1...count {
+        for _ in 1...drinkName {
             drinkArray.append(drink)
         }
         drinkset.append(drink)
         allstock[drinkName] = drinkArray
     }
+    */
+
     
     //전체 음료 재고 -> 종류별로 리턴
     func stockList() {

@@ -8,44 +8,79 @@
 
 import UIKit
 
+
 class storageViewController: UIViewController {
+    var machine = VendingMachine()
+    
     @IBAction func backBt(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     var coffeestock = Dictionary<String,Int>()
+    let drink = Drink()
+    var stock = [String : [Drink]]()
+    var drinkset = [Drink]()
+    var money = Int()
+    @IBOutlet weak var allstock: UILabel!
+
+    @IBAction func stockcheck(_ sender: Any) {
+        var allnb = Int()
+        allnb = Int(coffeeNb.text!)! + Int(cokeNb.text!)! + Int(juiceNb.text!)! + Int(peachNb.text!)! + Int(pineNb.text!)! + Int(sojuNb.text!)!
+        allstock.text = String(allnb)
+    }
     
     @IBAction func coffeeSt(_ sender: Any) {
-        var coffeeN = Int()
-        coffeeN += 1
-        coffeeNb.text = String(coffeeN + Int(coffeeNb.text!)!)
-        coffeestock["coffee"] = coffeeN + Int(coffeeNb.text!)!
-        print(coffeestock)
+        let coffee = Coffee()
+        machine.addDrink(drink: coffee)
+        print(machine.allstock)
+    }
+    
+    func changeLabel() {
     }
     
     @IBAction func cokeSt(_ sender: Any) {
+        let coke = Coke()
+        machine.addDrink(drink: coke)
+    }
+/*
         var cokeN = Int()
         cokeN += 1
         cokeNb.text = String(cokeN + Int(cokeNb.text!)!)
-    }
+ */
     @IBAction func juiceSt(_ sender: Any) {
+        let orangeJuice = Juice()
+        machine.addDrink(drink: orangeJuice)
+    }
+        //juiceNb.text = String( + Int(juiceNb.text!)!)
+
+        /*
         var juiceN = Int()
         juiceN += 1
-        juiceNb.text = String(juiceN + Int(juiceNb.text!)!)
-    }
+ */
+    
     @IBAction func peachSt(_ sender: Any) {
+        let peachTok = Toktokpeach()
+        machine.addDrink(drink: peachTok)
+/*
         var peachN = Int()
         peachN += 1
-        peachNb.text = String(peachN + Int(peachNb.text!)!)
+        peachNb.text = String(peachN + Int(peachNb.text!)!)*/
     }
     @IBAction func pineSt(_ sender: Any) {
+        let pineTok = Toktokpine()
+        machine.addDrink(drink: pineTok)
+/*
         var pineN = Int()
         pineN += 1
         pineNb.text = String(pineN + Int(pineNb.text!)!)
+ */
     }
     @IBAction func sojuSt(_ sender: Any) {
+        let soju = Soju()
+        machine.addDrink(drink: soju)
+/*
         var sojuN = Int()
         sojuN += 1
-        sojuNb.text = String(sojuN + Int(sojuNb.text!)!)
+        sojuNb.text = String(sojuN + Int(sojuNb.text!)!)*/
     }
     
 

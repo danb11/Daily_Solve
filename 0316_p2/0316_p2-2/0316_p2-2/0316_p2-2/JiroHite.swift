@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 
 class JinroHite : Drink {
     var color : Bool
@@ -18,21 +18,42 @@ class JinroHite : Drink {
         setPrice(2000)
         setCapacity(500)
     }
-}
-
-class Toktokpeach : JinroHite {
-    let peach : String
-    init(tastepeach : String) {
-        peach = tastepeach
-        super.init(isColor: true)
+    func getcolor() -> Bool {
+        return color
     }
 }
 
-class Toktokpine : JinroHite {
-    let pine : String
-    init(tastepine : String) {
-        pine = tastepine
+class Toktok: JinroHite {
+    private var taste : String
+    init() {
+        taste = ""
         super.init(isColor: true)
+        
+    }
+    func getTaste() -> String {
+        return taste
+    }
+    func setTaste(_ settingTaste: String) {
+        taste = settingTaste
+    }
+}
+
+class Toktokpeach : Toktok {
+    override init() {
+        super.init()
+        setname("ToktokPeach")
+        setTaste("Peach")
+        setPrice(2000)
+        
+    }
+}
+
+class Toktokpine : Toktok {
+    override init() {
+        super.init()
+        setname("ToktokPine")
+        setTaste("Pine")
+        setPrice(2000)
     }
 }
 
@@ -40,5 +61,8 @@ class Toktokpine : JinroHite {
 class Soju : JinroHite {
     init() {
         super.init(isColor: false)
+        setname("Soju")
+        setPrice(2500)
     }
 }
+*/

@@ -10,18 +10,24 @@ import Foundation
 
 class VendingMachine {
     
-    var items = [String:Int]()
+    var allstock = [String : [Drink]]()
+    var drinkset = [Drink]()
+    var money = Int()
+    
     
     // 특정 음료를 추가
-    func addDrink(additem : Drink) {
-        var canNeme = additem.getName()
-        items[canNeme] = 1
-        
+    func addDrink(drink : Drink, count : Int) {
+        let drinkName = drink.getName()
+        var drinkArray = [Drink]()
+        for _ in 1...count {
+            drinkArray.append(drink)
+        }
+        drinkset.append(drink)
+        allstock[drinkName] = drinkArray
     }
     
     //전체 음료 재고 -> 종류별로 리턴
-    func stockList() -> Dictionary<String, Any> {
-        <#function body#>
+    func stockList() {
     }
     
     // 금액 입력 -> 구매 가능한 음료 목록
@@ -34,6 +40,7 @@ class VendingMachine {
     func printadd() {
         
     }
+    
     
     
 }

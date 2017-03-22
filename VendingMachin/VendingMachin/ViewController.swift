@@ -88,6 +88,12 @@ class ViewController: UIViewController {
         }
         if currentBalance >= 1000 {
         }
+        UIView.animate(withDuration: 0.5, animations:
+            {self.coffeeI.center = self.get1point
+                self.getArray.append(self.get2.image = #imageLiteral(resourceName: "coke.png"))
+                self.coffeeI.alpha = 0
+        })
+        cofpoint = coffeeI.center
     
     }
 
@@ -200,7 +206,12 @@ class ViewController: UIViewController {
         get1point = get1.center
         getArray = [get1, get2, get3, get4, get5]
 
-
+        let test = VendingMachine()
+        let coke = Coke()
+        let coffee = Coffee()
+        print(coke == coffee)
+        //test.addDrink(drink: coke, count : 1)
+    
         
 
         // Do any additional setup after loading the view, typically from a nib.

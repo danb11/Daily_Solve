@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 
 class Cocacola : Drink {
     private var cafein : Bool
@@ -49,4 +49,4 @@ class Juice : Cocacola {
         super.init(iscafein: false)
         setname("Juice")
     }
-}
+}*/
