@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hDn-fv-EZV">
+                    <connections>
+                        <action selector="blueSplit:" destination="BYZ-38-t0r" id="vxr-RM-jEQ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1e-KS-WFO" userLabel="pink">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwT-lX-Llc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GS8-EM-xe3">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone6s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rrW-4a-09B">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rrW-4a-09B" firstAttribute="width" secondItem="GS8-EM-xe3" secondAttribute="height" multiplier="5:4" id="twG-Ef-aQA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.58804205256255304" blue="0.74052769030815824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AYg-S7-ipQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="EwT-lX-Llc" secondAttribute="bottom" id="b24-BX-qZz"/>
+                                    <constraint firstAttribute="trailing" secondItem="EwT-lX-Llc" secondAttribute="trailing" id="cL4-75-tGz"/>
+                                    <constraint firstItem="EwT-lX-Llc" firstAttribute="top" secondItem="c1e-KS-WFO" secondAttribute="top" id="dMD-sY-QaK"/>
+                                    <constraint firstItem="EwT-lX-Llc" firstAttribute="leading" secondItem="c1e-KS-WFO" secondAttribute="leading" id="iqk-Mc-klc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avE-fT-3dx" userLabel="blue">
+                                <rect key="frame" x="0.0" y="300" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.24595820486010711" green="0.53241502574466304" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r9G-Np-MEa"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hDn-fv-EZV" appends="YES" id="aeE-jt-wIC"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFd-Gb-MoF" userLabel="purple">
+                                <rect key="frame" x="0.0" y="330" width="375" height="337"/>
+                                <color key="backgroundColor" red="0.79857389479582019" green="0.61821534553126534" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c1e-KS-WFO" secondAttribute="trailing" id="Cy4-gt-s4Z"/>
+                            <constraint firstAttribute="trailing" secondItem="avE-fT-3dx" secondAttribute="trailing" id="HaO-3O-FA2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eFd-Gb-MoF" secondAttribute="bottom" id="Nxs-Lz-HdO"/>
+                            <constraint firstItem="avE-fT-3dx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PlX-Kp-olO"/>
+                            <constraint firstAttribute="trailing" secondItem="eFd-Gb-MoF" secondAttribute="trailing" id="fvE-Rd-pNB"/>
+                            <constraint firstItem="eFd-Gb-MoF" firstAttribute="top" secondItem="avE-fT-3dx" secondAttribute="bottom" id="hLF-Rh-LiU"/>
+                            <constraint firstItem="c1e-KS-WFO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="iPa-9G-c9c"/>
+                            <constraint firstItem="eFd-Gb-MoF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j5C-9Z-veo"/>
+                            <constraint firstItem="avE-fT-3dx" firstAttribute="top" secondItem="c1e-KS-WFO" secondAttribute="bottom" id="skG-2j-ORJ"/>
+                            <constraint firstItem="c1e-KS-WFO" firstAttribute="bottom" secondItem="avE-fT-3dx" secondAttribute="top" id="svE-R9-CiG"/>
+                            <constraint firstItem="c1e-KS-WFO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wre-Qp-SVe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pinkHeight" destination="AYg-S7-ipQ" id="N5u-7w-7OZ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone6s.jpg" width="1600" height="1200"/>
+        <image name="watch.jpg" width="1527" height="628"/>
+    </resources>
+</document>
