@@ -15,7 +15,7 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBAction func camerapicker(_ sender: Any) {
         let camerapick = UIImagePickerController()
         camerapick.delegate = self
-        camerapick.sourceType = .camera
+        camerapick.sourceType = .photoLibrary
         present(camerapick, animated: true, completion: nil)
         
     }
